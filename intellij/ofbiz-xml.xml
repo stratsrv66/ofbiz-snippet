@@ -1,236 +1,238 @@
-<template name="!p" value="org.ofbiz." toReformat="false" toShortenFQNames="true">
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!actions-field" value="&lt;actions&gt;&#10;    &lt;set field=&quot;$field$&quot; value=&quot;$value$&quot;/&gt;&#10;&lt;/actions&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="field" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!view-entity" value="&lt;view-entity entity-name=&quot;$name$&quot; package-name=&quot;$package$&quot;&gt;&#10;&lt;/view-entity&gt;&#10;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="package" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!view-map" value="&lt;view-map name=&quot;$name$&quot; page=&quot;$page$&quot; type=&quot;$type$&quot;/&gt;" description="" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="page" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!keyMap" value="&lt;key-map field-name=&quot;$fieldName$&quot; rel-field-name=&quot;$fieldRelTo$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="fieldName" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="fieldRelTo" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!screen" value="&lt;screen name=&quot;$name$&quot;&gt;&#10;        &lt;section&gt;&#10;        &#10;        &lt;/section&gt;&#10;    &lt;/screen&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!attrDouble" value="&lt;attribute name=&quot;$name$&quot; type=&quot;Double&quot; mode=&quot;$mode$&quot; optional=&quot;$optional$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="mode" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="optional" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!attr" value="&lt;attribute name=&quot;$name$&quot; type=&quot;$type$&quot; mode=&quot;$mode$&quot; optional=&quot;$optional$&quot;/&gt;&#10;" description="Ajoute un attribute dans un service" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="mode" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="optional" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!attrBigDecimal" value="&lt;attribute name=&quot;$name$&quot; type=&quot;java.math.BigDecimal&quot; mode=&quot;$mode$&quot; optional=&quot;$optional$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="mode" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="optional" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!service" value="&lt;service name=&quot;$name$&quot; default-entity-name=&quot;$entity$&quot; engine=&quot;java&quot;&#10;            location=&quot;$location$&quot; invoke=&quot;$invoke$&quot; auth=&quot;true&quot;&gt;&#10;        &lt;description&gt;$description$&lt;/description&gt;&#10;&lt;/service&gt;" description="Créer un service dans un fichier xml" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="location" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="invoke" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!form-list" value="&lt;form name=&quot;$name$&quot; type=&quot;list&quot;&#10;target=&quot;$target$&quot; title=&quot;$title$&quot; list-name=&quot;$listName$&quot;&#10;default-title-style=&quot;tableheadtext&quot; default-widget-style=&quot;inputBox&quot; default-tooltip-style=&quot;tabletext&quot;&gt;&#10;&#10;&lt;/form&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="listName" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!entity-one" value="&lt;entity-one entity-name=&quot;$entity$&quot; value-name=&quot;$name$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!field-id" value="&lt;field name=&quot;$name$&quot; type=&quot;id&quot;&gt;&lt;/field&gt;" description="" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!field-dateTime" value="&lt;field name=&quot;$name$&quot; type=&quot;date-time&quot;&gt;&lt;/field&gt;" description="" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!ftl" value="&lt;widgets&gt;&#10;    &lt;decorator-screen name=&quot;CommonProductDecorator&quot;  location=&quot;${parameters.mainDecoratorLocation}&quot;&gt;&#10;        &lt;decorator-section name=&quot;body&quot;&gt;&#10;            &lt;platform-specific&gt;&#10;                 &lt;html&gt;&lt;html-template location=&quot;$location$&quot;/&gt;&lt;/html&gt;&#10;            &lt;/platform-specific&gt;&#10;        &lt;/decorator-section&gt;&#10;    &lt;/decorator-screen&gt;&#10;&lt;/widgets&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="location" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!form" value="&lt;form name=&quot;$name$&quot; type=&quot;$type$&quot; &#10;target=&quot;$target$&quot; title=&quot;$title$&quot; default-map-name=&quot;formsData&quot;&#10;default-title-style=&quot;control-label&quot; default-widget-style=&quot;form-control input-sm&quot; default-tooltip-style=&quot;tabletext&quot;&gt;&#10;         &#10;&lt;/form&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!request-map" value="&lt;request-map uri=&quot;$name$&quot;&gt;&#10;        &lt;security https=&quot;$https$&quot; auth=&quot;$auth$&quot;/&gt;&#10;        &lt;event type=&quot;$type$&quot; invoke=&quot;$invoke$&quot;/&gt;&#10;        &lt;response name=&quot;success&quot; type=&quot;$successType$&quot; value=&quot;$sValue$&quot;/&gt;&#10;        &lt;response name=&quot;error&quot; type=&quot;$errorType$&quot; value=&quot;$eValue$&quot;/&gt;&#10;&lt;/request-map&gt;" description="" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="https" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="auth" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="invoke" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="successType" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="sValue" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="errorType" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="eValue" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!include-form" value="&lt;include-form name=&quot;$name$&quot; location=&quot;$location$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="location" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!auto-fields-service" value="&lt;auto-fields-service service-name=&quot;$serviceName$&quot; map-name=&quot;$mapName$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
-  <variable name="serviceName" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="mapName" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!field-hidden" value="&lt;field name=&quot;$name$&quot;&gt;&lt;hidden/&gt;&lt;/field&gt;&#10;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!autoAttr" value="&lt;auto-attributes include=&quot;pk&quot; mode=&quot;IN&quot; optional=&quot;true&quot;/&gt;" description="Inclus tous les champs d'un form" toReformat="false" toShortenFQNames="true">
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!attrString" value="&lt;attribute name=&quot;$name$&quot; type=&quot;String&quot; mode=&quot;$mode$&quot; optional=&quot;$optional$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="mode" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="optional" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!ui" value="${uiLabelMap.$label$}" toReformat="false" toShortenFQNames="true">
-  <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!field-name" value="&lt;field name=&quot;$name$&quot; type=&quot;name&quot;&gt;&lt;/field&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!set" value="&lt;set field=&quot;$field$&quot; value=&quot;$value$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
-  <variable name="field" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!entiy" value="&lt;entity entity-name=&quot;$name$&quot; package-name=&quot;$package$&quot;&gt;   &#10;&#10;&lt;/entity&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="package" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!field-idne" value="&lt;field name=&quot;$name$&quot; type=&quot;id-ne&quot;&gt;&lt;/field&gt;" description="" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!relation" value="&lt;relation type=&quot;$type$&quot; fk-name=&quot;$name$&quot; rel-entity-name=&quot;$relTo$&quot;&gt;&#10;    &lt;key-map field-name=&quot;$fieldName$&quot; rel-field-name=&quot;$fieldRelTo$&quot;/&gt;&#10;&lt;/relation&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="relTo" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="fieldName" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="fieldRelTo" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!exclude" value="&lt;exclude field=&quot;$name$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!field-numeric" value="&lt;field name=&quot;$name$&quot; type=&quot;numeric&quot;&gt;&lt;/field&gt;" description="" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!request-map-service-screen" value="&lt;request-map uri=&quot;$name$&quot;&gt;&#10;        &lt;security https=&quot;true&quot; auth=&quot;true&quot;/&gt;&#10;        &lt;event type=&quot;service&quot; invoke=&quot;$invoke$&quot;/&gt;&#10;        &lt;response name=&quot;success&quot; type=&quot;screen&quot; value=&quot;$sValue$&quot;/&gt;&#10;        &lt;response name=&quot;error&quot; type=&quot;screen&quot; value=&quot;$eValue$&quot;/&gt;&#10;&lt;/request-map&gt;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="invoke" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="sValue" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="eValue" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
-<template name="!field" value="&lt;field name=&quot;$name$&quot; title=&quot;${uiLabelMap.$title$}&quot; widget-style=&quot;tabletext&quot;&gt;&lt;display-entity entity-name=&quot;$entityName$&quot;/&gt;&lt;/field&gt;&#10;" toReformat="false" toShortenFQNames="true">
-  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
-  <variable name="entityName" expression="" defaultValue="" alwaysStopAt="true" />
-  <context>
-    <option name="XML" value="true" />
-  </context>
-</template>
+<templateSet group="ofbiz_xml">
+    <template name="!p" value="org.ofbiz." toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!actions-field" value="&lt;actions&gt;&#10;    &lt;set field=&quot;$field$&quot; value=&quot;$value$&quot;/&gt;&#10;&lt;/actions&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="field" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!view-entity" value="&lt;view-entity entity-name=&quot;$name$&quot; package-name=&quot;$package$&quot;&gt;&#10;&lt;/view-entity&gt;&#10;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="package" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!view-map" value="&lt;view-map name=&quot;$name$&quot; page=&quot;$page$&quot; type=&quot;$type$&quot;/&gt;" description="" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="page" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!keyMap" value="&lt;key-map field-name=&quot;$fieldName$&quot; rel-field-name=&quot;$fieldRelTo$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="fieldName" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="fieldRelTo" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!screen" value="&lt;screen name=&quot;$name$&quot;&gt;&#10;        &lt;section&gt;&#10;        &#10;        &lt;/section&gt;&#10;    &lt;/screen&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!attrDouble" value="&lt;attribute name=&quot;$name$&quot; type=&quot;Double&quot; mode=&quot;$mode$&quot; optional=&quot;$optional$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="mode" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="optional" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!attr" value="&lt;attribute name=&quot;$name$&quot; type=&quot;$type$&quot; mode=&quot;$mode$&quot; optional=&quot;$optional$&quot;/&gt;&#10;" description="Ajoute un attribute dans un service" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="mode" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="optional" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!attrBigDecimal" value="&lt;attribute name=&quot;$name$&quot; type=&quot;java.math.BigDecimal&quot; mode=&quot;$mode$&quot; optional=&quot;$optional$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="mode" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="optional" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!service" value="&lt;service name=&quot;$name$&quot; default-entity-name=&quot;$entity$&quot; engine=&quot;java&quot;&#10;            location=&quot;$location$&quot; invoke=&quot;$invoke$&quot; auth=&quot;true&quot;&gt;&#10;        &lt;description&gt;$description$&lt;/description&gt;&#10;&lt;/service&gt;" description="Créer un service dans un fichier xml" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="location" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="invoke" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="description" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!form-list" value="&lt;form name=&quot;$name$&quot; type=&quot;list&quot;&#10;target=&quot;$target$&quot; title=&quot;$title$&quot; list-name=&quot;$listName$&quot;&#10;default-title-style=&quot;tableheadtext&quot; default-widget-style=&quot;inputBox&quot; default-tooltip-style=&quot;tabletext&quot;&gt;&#10;&#10;&lt;/form&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="listName" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!entity-one" value="&lt;entity-one entity-name=&quot;$entity$&quot; value-name=&quot;$name$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="entity" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!field-id" value="&lt;field name=&quot;$name$&quot; type=&quot;id&quot;&gt;&lt;/field&gt;" description="" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!field-dateTime" value="&lt;field name=&quot;$name$&quot; type=&quot;date-time&quot;&gt;&lt;/field&gt;" description="" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!ftl" value="&lt;widgets&gt;&#10;    &lt;decorator-screen name=&quot;CommonProductDecorator&quot;  location=&quot;${parameters.mainDecoratorLocation}&quot;&gt;&#10;        &lt;decorator-section name=&quot;body&quot;&gt;&#10;            &lt;platform-specific&gt;&#10;                 &lt;html&gt;&lt;html-template location=&quot;$location$&quot;/&gt;&lt;/html&gt;&#10;            &lt;/platform-specific&gt;&#10;        &lt;/decorator-section&gt;&#10;    &lt;/decorator-screen&gt;&#10;&lt;/widgets&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="location" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!form" value="&lt;form name=&quot;$name$&quot; type=&quot;$type$&quot; &#10;target=&quot;$target$&quot; title=&quot;$title$&quot; default-map-name=&quot;formsData&quot;&#10;default-title-style=&quot;control-label&quot; default-widget-style=&quot;form-control input-sm&quot; default-tooltip-style=&quot;tabletext&quot;&gt;&#10;         &#10;&lt;/form&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!request-map" value="&lt;request-map uri=&quot;$name$&quot;&gt;&#10;        &lt;security https=&quot;$https$&quot; auth=&quot;$auth$&quot;/&gt;&#10;        &lt;event type=&quot;$type$&quot; invoke=&quot;$invoke$&quot;/&gt;&#10;        &lt;response name=&quot;success&quot; type=&quot;$successType$&quot; value=&quot;$sValue$&quot;/&gt;&#10;        &lt;response name=&quot;error&quot; type=&quot;$errorType$&quot; value=&quot;$eValue$&quot;/&gt;&#10;&lt;/request-map&gt;" description="" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="https" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="auth" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="invoke" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="successType" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="sValue" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="errorType" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="eValue" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!include-form" value="&lt;include-form name=&quot;$name$&quot; location=&quot;$location$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="location" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!auto-fields-service" value="&lt;auto-fields-service service-name=&quot;$serviceName$&quot; map-name=&quot;$mapName$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
+        <variable name="serviceName" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="mapName" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!field-hidden" value="&lt;field name=&quot;$name$&quot;&gt;&lt;hidden/&gt;&lt;/field&gt;&#10;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!autoAttr" value="&lt;auto-attributes include=&quot;pk&quot; mode=&quot;IN&quot; optional=&quot;true&quot;/&gt;" description="Inclus tous les champs d'un form" toReformat="false" toShortenFQNames="true">
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!attrString" value="&lt;attribute name=&quot;$name$&quot; type=&quot;String&quot; mode=&quot;$mode$&quot; optional=&quot;$optional$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="mode" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="optional" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!ui" value="${uiLabelMap.$label$}" toReformat="false" toShortenFQNames="true">
+        <variable name="label" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!field-name" value="&lt;field name=&quot;$name$&quot; type=&quot;name&quot;&gt;&lt;/field&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!set" value="&lt;set field=&quot;$field$&quot; value=&quot;$value$&quot;/&gt;&#10;" toReformat="false" toShortenFQNames="true">
+        <variable name="field" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!entiy" value="&lt;entity entity-name=&quot;$name$&quot; package-name=&quot;$package$&quot;&gt;   &#10;&#10;&lt;/entity&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="package" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!field-idne" value="&lt;field name=&quot;$name$&quot; type=&quot;id-ne&quot;&gt;&lt;/field&gt;" description="" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!relation" value="&lt;relation type=&quot;$type$&quot; fk-name=&quot;$name$&quot; rel-entity-name=&quot;$relTo$&quot;&gt;&#10;    &lt;key-map field-name=&quot;$fieldName$&quot; rel-field-name=&quot;$fieldRelTo$&quot;/&gt;&#10;&lt;/relation&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="relTo" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="fieldName" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="fieldRelTo" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!exclude" value="&lt;exclude field=&quot;$name$&quot;/&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!field-numeric" value="&lt;field name=&quot;$name$&quot; type=&quot;numeric&quot;&gt;&lt;/field&gt;" description="" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!request-map-service-screen" value="&lt;request-map uri=&quot;$name$&quot;&gt;&#10;        &lt;security https=&quot;true&quot; auth=&quot;true&quot;/&gt;&#10;        &lt;event type=&quot;service&quot; invoke=&quot;$invoke$&quot;/&gt;&#10;        &lt;response name=&quot;success&quot; type=&quot;screen&quot; value=&quot;$sValue$&quot;/&gt;&#10;        &lt;response name=&quot;error&quot; type=&quot;screen&quot; value=&quot;$eValue$&quot;/&gt;&#10;&lt;/request-map&gt;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="invoke" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="sValue" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="eValue" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+    <template name="!field" value="&lt;field name=&quot;$name$&quot; title=&quot;${uiLabelMap.$title$}&quot; widget-style=&quot;tabletext&quot;&gt;&lt;display-entity entity-name=&quot;$entityName$&quot;/&gt;&lt;/field&gt;&#10;" toReformat="false" toShortenFQNames="true">
+        <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="title" expression="" defaultValue="" alwaysStopAt="true" />
+        <variable name="entityName" expression="" defaultValue="" alwaysStopAt="true" />
+        <context>
+            <option name="XML" value="true" />
+        </context>
+    </template>
+</templateSet>
