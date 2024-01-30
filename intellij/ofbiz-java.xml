@@ -1,0 +1,51 @@
+<template name="!BigDecimal" value="BigDecimal $name$ = BigDecimal.valueOf((double)context.get(&quot;$name$&quot;));&#10;" description="récupère un BigDécimal" toReformat="false" toShortenFQNames="true">
+  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="!returnError" value="ServiceUtil.returnError($error$);" toReformat="false" toShortenFQNames="true">
+  <variable name="error" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="!string" value="String $name$ = (String) context.get(&quot;$name$&quot;);" description="récupère un String dans un service" toReformat="false" toShortenFQNames="true">
+  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="!find" value="try {&#10;    $class$ $name$ = ($class$) delegator.findByPrimaryKey(&quot;$class$&quot;, UtilMisc.toMap($map$));&#10;} catch (GenericEntityException e) {&#10;    throw new RuntimeException(e);&#10;}" toReformat="false" toShortenFQNames="true">
+  <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="map" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="!label" value="UtilProperties.getMessage(resource, &quot;$name$&quot;, locale)" description="Récupère un message dans les UILabelMap" toReformat="false" toShortenFQNames="true">
+  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="!service" value=" public static Map $name$ (DispatchContext ctx, Map context) {&#10;    Map result = ServiceUtil.returnSuccess();&#10;    GenericDelegator delegator = ctx.getDelegator();&#10;    LocalDispatcher dispatcher = ctx.getDispatcher();&#10;    Locale locale = (Locale) context.get(&quot;userLogin&quot;);&#10;    UserLogin userLogin = (UserLogin) context.get(&quot;userLogin&quot;);&#10;    &#10;    return result;&#10; &#10; }" description="Créer un service" toReformat="false" toShortenFQNames="true">
+  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="!put" value="result.put(&quot;$name$&quot;, $val$);" description="Ajoute au résultat d'un service" toReformat="false" toShortenFQNames="true">
+  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+  <variable name="val" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
+<template name="!double" value="double $name$ = (Double) context.get(&quot;$name$&quot;);" description="récupère un double dans un service" toReformat="false" toShortenFQNames="true">
+  <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+  <context>
+    <option name="JAVA_CODE" value="true" />
+  </context>
+</template>
