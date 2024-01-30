@@ -1,4 +1,5 @@
-<template name="!BigDecimal" value="BigDecimal $name$ = BigDecimal.valueOf((double)context.get(&quot;$name$&quot;));&#10;" description="récupère un BigDécimal" toReformat="false" toShortenFQNames="true">
+<templateSet group="ofbiz_java">
+  <template name="!BigDecimal" value="BigDecimal $name$ = BigDecimal.valueOf((double)context.get(&quot;$name$&quot;));&#10;" description="récupère un BigDécimal" toReformat="false" toShortenFQNames="true">
   <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
   <context>
     <option name="JAVA_CODE" value="true" />
@@ -49,3 +50,4 @@
     <option name="JAVA_CODE" value="true" />
   </context>
 </template>
+</templateSet>
