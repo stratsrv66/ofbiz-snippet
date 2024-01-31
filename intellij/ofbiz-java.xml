@@ -31,7 +31,7 @@
     <option name="JAVA_CODE" value="true" />
   </context>
 </template>
-<template name="!service" value=" public static Map $name$ (DispatchContext ctx, Map context) {&#10;    Map result = ServiceUtil.returnSuccess();&#10;    GenericDelegator delegator = ctx.getDelegator();&#10;    LocalDispatcher dispatcher = ctx.getDispatcher();&#10;    Locale locale = (Locale) context.get(&quot;userLogin&quot;);&#10;    UserLogin userLogin = (UserLogin) context.get(&quot;userLogin&quot;);&#10;    &#10;    return result;&#10; &#10; }" description="Créer un service" toReformat="false" toShortenFQNames="true">
+<template name="!service" value=" public static Map $name$ (DispatchContext ctx, Map context) {&#10;    Map result = ServiceUtil.returnSuccess();&#10;    GenericDelegator delegator = ctx.getDelegator();&#10;    LocalDispatcher dispatcher = ctx.getDispatcher();&#10;    Locale locale = (Locale) context.get(&quot;locale&quot;);&#10;    UserLogin userLogin = (UserLogin) context.get(&quot;userLogin&quot;);&#10;    &#10;    return result;&#10; &#10; }" description="Créer un service" toReformat="false" toShortenFQNames="true">
   <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
   <context>
     <option name="JAVA_CODE" value="true" />
