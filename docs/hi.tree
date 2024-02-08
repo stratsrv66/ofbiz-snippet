@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi"
+                 name="Documentation technique OYA"
+                 start-page="create-screen.md">
+
+    <toc-element topic="create-screen.md">
+        <toc-element topic="fill-screen.md"/>
+    </toc-element>
+</instance-profile>
